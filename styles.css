@@ -1,0 +1,167 @@
+/**
+Font-family: Inika. sans-serif;
+Secondary Font: Segoe UI, sans-serif;
+hero section
+    Background color gradient: #90e0ef, #fbfff8;
+
+Card section
+    Background color: #90e0ef;
+    Border Bottom color: #023e8a;
+
+Hosted Images
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/54yZ6sj/card-picture.png" alt="card-picture" border="0"></a>
+<a href="https://ibb.co/Zxk9RmM"><img src="https://i.ibb.co/gJBYbVR/Carlsmith-Beach-Park.png" alt="Carlsmith-Beach-Park" border="0"></a>
+<a href="https://ibb.co/gvSGwRH"><img src="https://i.ibb.co/tZqScJk/farmers-market.png" alt="farmers-market" border="0"></a>
+<a href="https://ibb.co/1KfjmbY"><img src="https://i.ibb.co/tcMFJ3w/hilo-hawaii-1.png" alt="hilo-hawaii-1" border="0"></a>
+<a href="https://ibb.co/R7pZ2D0"><img src="https://i.ibb.co/zNhjs4R/Liliuokalani-Gardens.png" alt="Liliuokalani-Gardens" border="0"></a>
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Open+Sans&display=swap');
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inika', serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://i.ibb.co/tcMFJ3w/hilo-hawaii-1.png);
+    background-size: cover;
+    height: 772px;
+}
+
+.hero h1 {
+    font-size: 96px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.hero-box {
+    background-color: rgba(0, 0, 0, .8);
+    max-width: 547px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 150px 40px 150px;
+    border-radius: 7px;
+}
+
+.section {
+    background: linear-gradient(#90e0ef, #fbfff8);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 100px 100px;
+
+}
+
+.section h3 {
+    font-size: 48px;
+    color: black;
+    text-align: center;
+
+}
+
+.section img {
+    border: 1px solid white;
+}
+
+.section h2 {
+    font-size: 26px;
+}
+
+.section p {
+    width: 300px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.activities {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.column {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.act {
+    margin: 20px;
+    width: 210px;
+    border-radius: 50%;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #90e0ef;
+    border-bottom: 10px solid #023e8a;
+    border-radius: 7px;
+
+}
+
+#profile_pic {
+    width: 250px;
+}
+
+.card_text {
+    padding-left:20px;
+    width: 320px;
+}
+
+.card h3 {
+    font-size: 25px;
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 940px) {
+    .activities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+    .hero-box {
+        max-width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        width: 10px auto;
+    }
+
+    .card_text {
+        padding-left: 0px;
+    }
+}
